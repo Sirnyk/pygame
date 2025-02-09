@@ -19,6 +19,7 @@ circle_pos = list(start_pos_circle)
 rect_pos = list(start_pos_rect)
 circle1_pos = list(start_pos_circle1)
 
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
