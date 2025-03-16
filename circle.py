@@ -7,6 +7,7 @@ class Circle:
     CIRCLE_JUMP_SPEED = 10
     current_jump = 0
     jump_dir = 1
+
     def __init__(self, color, pos, rad, speed):
         self.color = color
         self.pos = pos
