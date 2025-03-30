@@ -19,6 +19,8 @@ while True:
         if event.button == 1:
             for i in range(1, random.randint(1, width)):
                 current_pos[0] = i
+            num = random.randint(1, width)
+            current_pos[0] = (1 + num) / 2 * num
             for a in range(1, random.randint(1, height)):
                 current_pos[1] = a
 
