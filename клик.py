@@ -15,14 +15,11 @@ while True:
         if event.type == pygame.QUIT:
             exit()
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-        if event.button == 1:
-            for i in range(1, random.randint(1, width)):
-                current_pos[0] = i
-            num = random.randint(1, width)
-            current_pos[0] = (1 + num) / 2 * num
-            for a in range(1, random.randint(1, height)):
-                current_pos[1] = a
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if event.button == 1:
+                current_pos[0] = random.randint(1, width) - 1
+                for a in range(1, random.randint(1, height)):
+                    current_pos[1] = a
 
     win.fill(color_background)
     pygame.draw.circle(win, color_circle, current_pos, 30)
