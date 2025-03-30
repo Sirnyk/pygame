@@ -12,12 +12,10 @@ speed = 5
 FPS = 50
 clock = pygame.time.Clock()
 
-
-
 win = pygame.display.set_mode((width, height))
 
 for i in range(circles_cnt):
-    circles.append(Circle(rand_color.rand_color(), (i*(width/circles_cnt), i*(height/circles_cnt)), rad, speed))
+    circles.append(Circle(rand_color.rand_color(), (i * (width / circles_cnt), i * (height / circles_cnt)), rad, speed))
 
 while True:
     for event in pygame.event.get():
@@ -35,4 +33,3 @@ while True:
     pygame.display.update()
 
     clock.tick(FPS)
-
