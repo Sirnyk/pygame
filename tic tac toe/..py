@@ -19,9 +19,9 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             exit()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            board.click(list(event.pos))
 
     screen.fill(screen_color)
     board.draw(screen)
-    cross.draw_cross(screen)
-    circle.draw_circle(screen)
     pygame.display.update()
